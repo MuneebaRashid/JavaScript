@@ -124,31 +124,46 @@
 
 /********************************************************************/
 
-//question 6
-//Write a JavaScript program which iterates the integers from 1 to 100. 
-//But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". 
-//For numbers which are multiples of both three and five print "FizzBuzz".
+// //question 6
+// //Write a JavaScript program which iterates the integers from 1 to 100. 
+// //But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". 
+// //For numbers which are multiples of both three and five print "FizzBuzz".
 
-// Loop from 1 to 100
-for (let n = 1; n <= 100; n++) {
-  // Check if the current number is a multiple of 3 and/or 5
-  let output = "";
-  if (n % 3 === 0) {
-    output += "Fizz";
-  }
-  if (n % 5 === 0) {
-    output += "Buzz";
-  }
-  // If the current number is the multiple of 3 and 5 both, it will print FizzBuzz itself from above if statements.
-  // If the current number is not a multiple of 3 or 5, use the number itself
-  if (output === "") {
-    output = n;
-  }
-  // Display the output
-  console.log(output);
-}
+// // Loop from 1 to 100
+// for (let n = 1; n <= 100; n++) {
+//   // Check if the current number is a multiple of 3 and/or 5
+//   let output = "";
+//   if (n % 3 === 0) {
+//     output += "Fizz";
+//   }
+//   if (n % 5 === 0) {
+//     output += "Buzz";
+//   }
+//   // If the current number is the multiple of 3 and 5 both, it will print FizzBuzz itself from above if statements.
+//   // If the current number is not a multiple of 3 or 5, use the number itself
+//   if (output === "") {
+//     output = n;
+//   }
+//   // Display the output
+//   console.log(output);
+// }
 
 /********************************************************************/
 
 //question 7
-//Write a 
+//Write a Write a JavaScript program to construct the following pattern, using a nested for loop.
+//*
+//* *
+//* * *
+//* * * *
+//* * * * *
+//Display Rows
+for (let m = 1; m <= 5; m++) {
+  let star = "";
+  //Display Columns
+  for (let n = 1; n <= m; n++) {
+    star += "* ";
+  }
+  // Display Output
+  console.log(star);
+}
