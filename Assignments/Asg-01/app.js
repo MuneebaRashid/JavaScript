@@ -27,7 +27,8 @@
 /********************************************************************/
 
 // // question2
-// //Write a JavaScript conditional statement to find the sign of a number. Display an alert box with the specified sign (Sample:3 ; Output:The sign is +) (Sample:-5 ; Output:The sign is -)
+// //Write a JavaScript conditional statement to find the sign of a number. Display an alert box with the 
+//specified sign (Sample:3 ; Output:The sign is +) (Sample:-5 ; Output:The sign is -)
 // let num = prompt("Enter a number:"); // Prompt user for a number
 // num = parseFloat(num); // Convert the input to a number
 // // Check the sign of the number 
@@ -75,7 +76,8 @@
 /********************************************************************/
 
 // //question 4
-// //Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen
+// //Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, 
+//it will check if the current number is odd or even, and display a message to the screen
 // for (let i = 0; i <= 15; i++) {
 //   // Check if the current number is odd or even
 //   if (i % 2 === 0) {
@@ -88,5 +90,65 @@
 
 /********************************************************************/
 
-//question 5
-//Write a JavaScript program which computes the average marks of the following students Then, this average is used to determine the corresponding grade.
+// //question 5
+// //Write a JavaScript program which computes the average marks of the following students 
+//Then, this average is used to determine the corresponding grade.
+// // Prompt user for five numbers
+// let num1 = prompt("Enter marks for Sub1:");
+// let num2 = prompt("Enter marks for Sub2:");
+// let num3 = prompt("Enter marks for Sub3:");
+// let num4 = prompt("Enter marks for Sub4:");
+// let num5 = prompt("Enter marks for Sub5:");
+// //sum of total amrks
+// let sum =
+//   parseFloat(num1) +
+//   parseFloat(num2) +
+//   parseFloat(num3) +
+//   parseFloat(num4) +
+//   parseFloat(num5);
+// //calculating percentage
+// let percentage = (sum / 500) * 100;
+// //finding grade with percemtage
+// if (percentage >= 100) {
+//   grade = "A";
+// } else if (percentage >= 90) {
+//   grade = "B";
+// } else if (percentage >= 80) {
+//   grade = "C";
+// } else if (percentage >= 70) {
+//   grade = "D";
+// } else {
+//   grade = "F";
+// }
+// console.log("Your Grade is: " + grade);
+
+/********************************************************************/
+
+//question 6
+//Write a JavaScript program which iterates the integers from 1 to 100. 
+//But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". 
+//For numbers which are multiples of both three and five print "FizzBuzz".
+
+// Loop from 1 to 100
+for (let n = 1; n <= 100; n++) {
+  // Check if the current number is a multiple of 3 and/or 5
+  let output = "";
+  if (n % 3 === 0) {
+    output += "Fizz";
+  }
+  if (n % 5 === 0) {
+    output += "Buzz";
+  }
+  // If the current number is the multiple of 3 and 5 both, it will print FizzBuzz itself from above if statements.
+  // If the current number is not a multiple of 3 or 5, use the number itself
+  if (output === "") {
+    output = n;
+  }
+  // Display the output
+  console.log(output);
+}
+
+/********************************************************************/
+
+//question 7
+//Write a 
