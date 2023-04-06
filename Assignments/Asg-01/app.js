@@ -70,19 +70,23 @@
 //     largest = num5;
 // }
 // //Display largest value
-// console.log("The largest value is " + largest);
+// console.log("The largest value is" + largest);
 
 /********************************************************************/
 
-//question 4
-//Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen
-// Loop from 0 to 15
-for (let i = 0; i <= 15; i++) {
-    // Check if the current number is odd or even
-    if (i % 2 === 0) {
-      console.log(i + " is even.");
-    } else {
-      console.log(i + " is odd.");
-    }
-  }
-  
+// //question 4
+// //Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen
+// for (let i = 0; i <= 15; i++) {
+//   // Check if the current number is odd or even
+//   if (i % 2 === 0) {
+//     console.log(i + " is even.");
+//   }
+//   else {
+//     console.log(i + " is odd.");
+//   }
+// }
+
+/********************************************************************/
+
+//question 5
+//Write a JavaScript program which computes the average marks of the following students Then, this average is used to determine the corresponding grade.
