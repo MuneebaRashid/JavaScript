@@ -23,7 +23,7 @@ if (num1 > num2) { // Compare the numbers and display answer in the console
 } else {
     console.log("The two numbers are equal.");
 }
-
+g
 /********************************************************************/
 // // question2
 // //Write a JavaScript conditional statement to find the sign of a number. Display an alert box with the 
