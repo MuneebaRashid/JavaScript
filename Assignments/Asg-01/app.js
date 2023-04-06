@@ -1,31 +1,30 @@
-// //question-1 
-// //Write a JavaScript program that accepts two numbers in two prompts and displays the larger one in the console.
-// let value1 = prompt("Enter the first number:"); // Prompt for two numbers
-// let value2 = prompt("Enter the second number:");
-// //Compare the numbers and display answer in the console
-// if (value1 > value2) {
-//     console.log(value1 + " is larger than " + value2);
-// } else if (value2 > value1) {
-//     console.log(value2 + " is larger than " + value1);
-// } else {
-//     console.log("Both numbers are equal");
-// }
-// // the above code will work only for integers
-// // for decimal values, we need to parse float, example: 
-// let num1 = prompt("Enter the first number:"); // Prompt for two numbers
-// let num2 = prompt("Enter the second number:");
-// num1 = parseFloat(num1); // Convert the input to numbers
-// num2 = parseFloat(num2);
-// if (num1 > num2) { // Compare the numbers and display answer in the console
-//     console.log("The larger number is " + num1);
-// } else if (num2 > num1) {
-//     console.log("The larger number is " + num2);
-// } else {
-//     console.log("The two numbers are equal.");
-// }
+//question-1 
+//Write a JavaScript program that accepts two numbers in two prompts and displays the larger one in the console.
+let value1 = prompt("Enter the first number:"); // Prompt for two numbers
+let value2 = prompt("Enter the second number:");
+//Compare the numbers and display answer in the console
+if (value1 > value2) {
+    console.log(value1 + " is larger than " + value2);
+} else if (value2 > value1) {
+    console.log(value2 + " is larger than " + value1);
+} else {
+    console.log("Both numbers are equal");
+}
+// the above code will work only for integers
+// for decimal values, we need to parse float, example: 
+let num1 = prompt("Enter the first number:"); // Prompt for two numbers
+let num2 = prompt("Enter the second number:");
+num1 = parseFloat(num1); // Convert the input to numbers
+num2 = parseFloat(num2);
+if (num1 > num2) { // Compare the numbers and display answer in the console
+    console.log("The larger number is " + num1);
+} else if (num2 > num1) {
+    console.log("The larger number is " + num2);
+} else {
+    console.log("The two numbers are equal.");
+}
 
 /********************************************************************/
-
 // // question2
 // //Write a JavaScript conditional statement to find the sign of a number. Display an alert box with the 
 //specified sign (Sample:3 ; Output:The sign is +) (Sample:-5 ; Output:The sign is -)
@@ -41,7 +40,6 @@
 // }
 
 /********************************************************************/
-
 // //question 3
 // //Write a JavaScript program that accepts five numbers in five prompts and displays the larger one in the console
 // // Prompt user for five numbers
@@ -74,7 +72,6 @@
 // console.log("The largest value is" + largest);
 
 /********************************************************************/
-
 // //question 4
 // //Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, 
 //it will check if the current number is odd or even, and display a message to the screen
@@ -89,7 +86,6 @@
 // }
 
 /********************************************************************/
-
 // //question 5
 // //Write a JavaScript program which computes the average marks of the following students 
 //Then, this average is used to determine the corresponding grade.
@@ -123,12 +119,10 @@
 // console.log("Your Grade is: " + grade);
 
 /********************************************************************/
-
 // //question 6
 // //Write a JavaScript program which iterates the integers from 1 to 100. 
 // //But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". 
 // //For numbers which are multiples of both three and five print "FizzBuzz".
-
 // // Loop from 1 to 100
 // for (let n = 1; n <= 100; n++) {
 //   // Check if the current number is a multiple of 3 and/or 5
@@ -149,21 +143,20 @@
 // }
 
 /********************************************************************/
-
-//question 7
-//Write a Write a JavaScript program to construct the following pattern, using a nested for loop.
-//*
-//* *
-//* * *
-//* * * *
-//* * * * *
-//Display Rows
-for (let m = 1; m <= 5; m++) {
-  let star = "";
-  //Display Columns
-  for (let n = 1; n <= m; n++) {
-    star += "* ";
-  }
-  // Display Output
-  console.log(star);
-}
+// //question 7
+// //Write a Write a JavaScript program to construct the following pattern, using a nested for loop.
+// //*
+// //* *
+// //* * *
+// //* * * *
+// //* * * * *
+// //Display Rows
+// for (let m = 1; m <= 5; m++) {
+//   let star = "";
+//   //Display Columns
+//   for (let n = 1; n <= m; n++) {
+//     star += "* ";
+//   }
+//   // Display Output
+//   console.log(star);
+// }
