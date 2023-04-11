@@ -69,36 +69,70 @@
 // // //Code-1 
 // // function changeBgColor(element, color) {
 // //     if (element != null) {
-// //       element.style.backgroundColor = color;
+// //         element.style.backgroundColor = color;
 // //     }
-// //   }
-// //   // Example:
-// //   const myElement = document.getElementById("my-element");
-// //   changeBgColor(myElement, "aqua");
+// // }
+// // // Example:
+// // const myElement = document.getElementById("my-element");
+// // changeBgColor(myElement, "aqua");
 
 // //Code-2
 // function changeBgColor(element, newColor) {
 //     element.style.backgroundColor = newColor;
-//   }
-  
-//   // Example usage:
-//   const myElement = document.getElementById("my-element");
-//   changeBgColor(myElement, "red");
-  
+// }
+
+// // Example:
+// const myElement = document.getElementById("my-element");
+// changeBgColor(myElement, "red");
+
 /********************************************************************/
 // //Question-6
 // //Write a function that saves an object to localStorage. The function should take two arguments: the first argument
 // // is a string representing the key to use for storing the object, and the second argument is the object to store.
 // function saveObjectToLocalStorage(key, obj) {
 //     localStorage.setItem(key, JSON.stringify(obj));
-//   }
-//   // Example:
-//   const myObj = { name: "Muneeba", age: 24 };
-//   saveObjectToLocalStorage("my-object", myObj);
-//   //Eg-2
-//   const myObj1 = { name: "Rashid", age: 50 };
-//   saveObjectToLocalStorage("my-object", myObj1);
-  
+// }
+// // Example:
+// const myObj = { name: "Muneeba", age: 24 };
+// saveObjectToLocalStorage("my-object", myObj);
+// //Eg-2
+// const myObj1 = { name: "Rashid", age: 50 };
+// saveObjectToLocalStorage("my-object", myObj1);
+
 /********************************************************************/
-//Question-6
-//Write
+// //Question-7
+// //Write a function that retrieves an object from localStorage. The function should take one argument, which is a 
+// //string representing the key used to store the object. The function should return the object.
+// function getObjectFromLocalStorage(key) {
+//     const objString = localStorage.getItem(key);
+//     if (objString === null) {
+//         return null;
+//     }
+//     return JSON.parse(objString);
+// }
+/********************************************************************/
+//Question-8
+//Write a function that takes an object and saves each property to localStorage using the property name as the key
+//and the property value as the value. The function should also retrieve the object from localStorage and return it as a new object.
+function saveObjectToLocalStorage(obj) {
+    // Iterate over the properties of the object
+    for (let prop in obj) {
+        // Use the property name as the key and the property value as the value
+        localStorage.setItem(prop, obj[prop]);
+    }
+    // Retrieve the object from localStorage
+    let newObj = {};
+    for (let prop in obj) {
+        newObj[prop] = localStorage.getItem(prop);
+    }
+    // Return the new object
+    return newObj;
+}
+//Example:
+let myObj = { name: "Muneeba", age: 24, city: "Karachi" };
+let storedObj = saveObjectToLocalStorage(myObj);
+console.log(storedObj); // { name: "Muneeba", age: "24", city: "Karachi" }
+//Example-2:
+let myObj1 = { name: "M.Rashid", age: 50, city: "Karachi" };
+let storedObj1 = saveObjectToLocalStorage(myObj1);
+console.log(storedObj1); // { name: "M.Rashid", age: "50", city: "Karachi" }
