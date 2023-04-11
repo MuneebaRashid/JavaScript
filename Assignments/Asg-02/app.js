@@ -49,20 +49,56 @@
 // addParagraph("Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque placerat ac nisl ac feugiat. Sed eu accumsan mauris.");
 
 /********************************************************************/
-//Question-4
-//Write a function that adds a new list item to an unordered list in an HTML
-//document. The function should take a string argument that will be used as
-//the text content of the new list item.
-function addItemInList(text) {
-    const newItemInList = document.createElement("li");
-    newItemInList.textContent = text;
-    const unorderedList = document.querySelector("ul");
-    if (unorderedList) {
-        unorderedList.appendChild(newItemInList);
-      } else {
-        console.error("No unordered list found");
-      }
-    }
-  // Example:
-  addItemInList("This is a new list item!");
+// //Question-4
+// //Write a function that adds a new list item to an unordered list in an HTML
+// //document. The function should take a string argument that will be used as
+// //the text content of the new list item.
+// const myPara = (messages) => {
+//     const addNewPara = document.createElement("p");
+//     addNewPara.textContent = messages;
+//     document.body.appendChild(addNewPara);
+//   };
+//   myPara(
+//     "Lorem Ipsum is dommmmmm simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+//   );
+
+/********************************************************************/
+// //Question-5
+// //Write a function that changes the background color of an HTML element. The function should take two arguments: 
+// //the first argument is a reference to the HTML element, and the second argument is a string representing the new background color.
+// // //Code-1 
+// // function changeBgColor(element, color) {
+// //     if (element != null) {
+// //       element.style.backgroundColor = color;
+// //     }
+// //   }
+// //   // Example:
+// //   const myElement = document.getElementById("my-element");
+// //   changeBgColor(myElement, "aqua");
+
+// //Code-2
+// function changeBgColor(element, newColor) {
+//     element.style.backgroundColor = newColor;
+//   }
   
+//   // Example usage:
+//   const myElement = document.getElementById("my-element");
+//   changeBgColor(myElement, "red");
+  
+/********************************************************************/
+// //Question-6
+// //Write a function that saves an object to localStorage. The function should take two arguments: the first argument
+// // is a string representing the key to use for storing the object, and the second argument is the object to store.
+// function saveObjectToLocalStorage(key, obj) {
+//     localStorage.setItem(key, JSON.stringify(obj));
+//   }
+//   // Example:
+//   const myObj = { name: "Muneeba", age: 24 };
+//   saveObjectToLocalStorage("my-object", myObj);
+//   //Eg-2
+//   const myObj1 = { name: "Rashid", age: 50 };
+//   saveObjectToLocalStorage("my-object", myObj1);
+  
+/********************************************************************/
+//Question-6
+//Write
