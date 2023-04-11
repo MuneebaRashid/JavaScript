@@ -1,18 +1,18 @@
-// //Question-1
-// //Write a function that creates a closure and returns a function that can add
-// //a specific number to any number passed to it. For example, if the closure is
-// //created with 5, the returned function should add 5 to any number passed to it.
-// function createClosure(num) {
-//     return function(n) { //Function
-//       return n + num;
-//     }
-//   }
-//   const add5 = createClosure(5);
-//   //Examples
-//   console.log(add5(5));  // Output: 10
-//   console.log(add5(10)); // Output: 15
-//   console.log(add5(15)); // Output: 20
-//   console.log(add5(20)); // Output: 25
+//Question-1
+//Write a function that creates a closure and returns a function that can add
+//a specific number to any number passed to it. For example, if the closure is
+//created with 5, the returned function should add 5 to any number passed to it.
+function createClosure(num) {
+    return function(n) { //Function
+      return n + num;
+    }
+  }
+  const add5 = createClosure(5);
+  //Examples
+  console.log(add5(5));  // Output: 10
+  console.log(add5(10)); // Output: 15
+  console.log(add5(15)); // Output: 20
+  console.log(add5(20)); // Output: 25
 
 /************************************************************************/
 // //Question-2
@@ -110,29 +110,30 @@
 //     }
 //     return JSON.parse(objString);
 // }
+
 /********************************************************************/
-//Question-8
-//Write a function that takes an object and saves each property to localStorage using the property name as the key
-//and the property value as the value. The function should also retrieve the object from localStorage and return it as a new object.
-function saveObjectToLocalStorage(obj) {
-    // Iterate over the properties of the object
-    for (let prop in obj) {
-        // Use the property name as the key and the property value as the value
-        localStorage.setItem(prop, obj[prop]);
-    }
-    // Retrieve the object from localStorage
-    let newObj = {};
-    for (let prop in obj) {
-        newObj[prop] = localStorage.getItem(prop);
-    }
-    // Return the new object
-    return newObj;
-}
-//Example:
-let myObj = { name: "Muneeba", age: 24, city: "Karachi" };
-let storedObj = saveObjectToLocalStorage(myObj);
-console.log(storedObj); // { name: "Muneeba", age: "24", city: "Karachi" }
-//Example-2:
-let myObj1 = { name: "M.Rashid", age: 50, city: "Karachi" };
-let storedObj1 = saveObjectToLocalStorage(myObj1);
-console.log(storedObj1); // { name: "M.Rashid", age: "50", city: "Karachi" }
+// //Question-8
+// //Write a function that takes an object and saves each property to localStorage using the property name as the key
+// //and the property value as the value. The function should also retrieve the object from localStorage and return it as a new object.
+// function saveObjectToLocalStorage(obj) {
+//     // Iterate over the properties of the object
+//     for (let prop in obj) {
+//         // Use the property name as the key and the property value as the value
+//         localStorage.setItem(prop, obj[prop]);
+//     }
+//     // Retrieve the object from localStorage
+//     let newObj = {};
+//     for (let prop in obj) {
+//         newObj[prop] = localStorage.getItem(prop);
+//     }
+//     // Return the new object
+//     return newObj;
+// }
+// //Example:
+// let myObj = { name: "Muneeba", age: 24, city: "Karachi" };
+// let storedObj = saveObjectToLocalStorage(myObj);
+// console.log(storedObj); // { name: "Muneeba", age: "24", city: "Karachi" }
+// //Example-2:
+// let myObj1 = { name: "M.Rashid", age: 50, city: "Karachi" };
+// let storedObj1 = saveObjectToLocalStorage(myObj1);
+// console.log(storedObj1); // { name: "M.Rashid", age: "50", city: "Karachi" }
